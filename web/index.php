@@ -4,14 +4,17 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
+$app->register(new Silex\Provider\TranslationServiceProvider(), array(
+    'locale_fallbacks' => array('en'),
+));
 
 
-$app->get('/', function() {
-    return 'Woot';
+$app->get('/', function() use ($app) {
+    return $app->redirect("/{$app['locale']}/");
 });
 
-$app->get('/hello/{name}', function ($name) use ($app) {
-    return 'Hello '.$app->escape($name);
+$app->get('/{_locale}/', function() use ($app) {
+    return "Woot, das ist {$app['locale']}!";
 });
 
 $app->run();
