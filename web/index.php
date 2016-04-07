@@ -4,7 +4,7 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
-$app['debug'] = true;
+$app['debug'] = defined('DEBUG') ? true : false;
 $app->register(new Silex\Provider\TranslationServiceProvider(), array(
     'locale_fallbacks' => array('en'),
 ));

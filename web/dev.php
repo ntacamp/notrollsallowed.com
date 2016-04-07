@@ -10,4 +10,5 @@ if (php_sapi_name() === 'cli-server' && is_file($filename)) {
     return false;
 }
 
+define('DEBUG', true);
 require __DIR__.'/index.php';
