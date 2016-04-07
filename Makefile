@@ -1,6 +1,6 @@
 .PHONY: serve
 serve: bootstrap
-	php -S localhost:8080 web/index.php
+	php -S localhost:8080 -t web web/dev.php
 
 .PHONY: boostrap
 bootstrap: vendor
