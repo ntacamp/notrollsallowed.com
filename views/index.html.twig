@@ -71,6 +71,17 @@
 						<a href="http://2013.notrollsallowed.com/">2013</a>
 					</span>
 				</li>
+                {% for locale in app.locales  %}
+                    {% if locale != app.locale %}
+                    <li>
+                        <span class="medium pretty default btn">
+                            <a href="/{{ locale }}">
+                                {{ locale|upper }}
+                            </a>
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
 			</ul>
 		</div>
 	</div>
