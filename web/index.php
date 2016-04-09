@@ -17,9 +17,9 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 $app['translator'] = $app->share($app->extend('translator',
     function($translator, $app) {
     $translator->addLoader('yaml', new YamlFileLoader());
-    foreach ($locale as $app['locales']) {
+    foreach ($app['locales'] as $locale) {
       $translator->addResource(
-        'yaml', __DIR__.'/locales/'.$locale.'.yml', $locale);
+        'yaml', __DIR__.'/../locales/'.$locale.'.yaml', $locale);
     }
 
     return $translator;
