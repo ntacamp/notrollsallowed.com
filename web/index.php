@@ -1,9 +1,11 @@
 <?php
 
-// web/index.php
+use Symfony\Component\Translation\Loader\YamlFileLoader;
+
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
+
 $app['debug'] = defined('DEBUG') ? true : false;
 $app['locales'] = ['lt', 'en'];
 $app->register(new Silex\Provider\TranslationServiceProvider(), array(
@@ -12,8 +14,19 @@ $app->register(new Silex\Provider\TranslationServiceProvider(), array(
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views',
 ));
+$app['translator'] = $app->share($app->extend('translator',
+    function($translator, $app) {
+    $translator->addLoader('yaml', new YamlFileLoader());
+    foreach ($locale as $app['locales']) {
+      $translator->addResource(
+        'yaml', __DIR__.'/locales/'.$locale.'.yml', $locale);
+    }
 
+    return $translator;
+}));
+ 
 
+// Paths
 $app->get('/', function() use ($app) {
     return $app->redirect("/{$app['locale']}/");
 });
