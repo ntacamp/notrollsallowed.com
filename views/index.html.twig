@@ -102,11 +102,9 @@
 <div class="clearfix"></div>
 <div class="row">
 	<div class="footer">
-		<p class="box">No Trolls Allowed yra hakerių, inžinierių, mokslininkų, makerių, menininkų ir įvairaus plauko geekų susibūrimas gamtoje, po atviru dangumi. 
-			Pagrindinis renginio tikslas - suburti bendraminčius, norinčius papasakoti apie savo veiklą, parodyti savo projektus, suorganizuoti kūrybines dirbtuves, kur kartu su kitais renginio dalyviais galėtų eksperimentuoti.
-			<br>Renginio pavadinimas atspindi renginio dvasią, "No Trolls Allowed" - nelaukiame jokių trolių, laukiame žmonių turinčių kuo pasidalinti, tad kiekvienas dalyvis privalo pasiruošti pranešimą ir jį pristatyti renginio metu.
-			<br>Pranešimo temos gali būti labai plačios - nuo psichologijos, stalo žaidimų iki funkcinio programavimo, algoritmų, litavimo dirbtuvių (<a href="http://2015.notrollsallowed.com/pranesimai">NTA 2015 temos</a>).
-        </p>
+        <div class="box">
+            {% include app.locale ~ '/content.md' %}
+        </div>
         <br><br>
         <p class="box">{{'follow_us'|trans}} <a href="https://twitter.com/ntacamp">Twitter</a>, <a href="https://www.facebook.com/NoTrollsAllowed">Facebook</a> {{'and'|trans}} <a href="http://blog.notrollsallowed.com"><b>{{'on_blog'|trans}}</b></a>.</p><br>
         <p class="box">{{'contact_us'|trans}} <a href="mailto:hi@notrollsallowed.com">hi@notrollsallowed.com</a>.</p>
