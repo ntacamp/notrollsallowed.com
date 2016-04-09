@@ -7,12 +7,17 @@ require_once __DIR__.'/../vendor/autoload.php';
 $app = new Silex\Application();
 
 $app['debug'] = defined('DEBUG') ? true : false;
+
+// Templating
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+    'twig.path' => __DIR__.'/../views',
+));
+$app->register(new BretRZaun\Silex\MarkdownServiceProvider());
+
+// Translations
 $app['locales'] = ['lt', 'en'];
 $app->register(new Silex\Provider\TranslationServiceProvider(), array(
     'locale_fallbacks' => array('en'),
-));
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/../views',
 ));
 $app['translator'] = $app->share($app->extend('translator',
     function($translator, $app) {

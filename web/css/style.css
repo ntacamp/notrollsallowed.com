@@ -6,3 +6,11 @@ However, this blank file is available if you prefer
 .footer {
     margin-bottom: 0;
 }
+.box p {
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: inline;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    color: black;
+}

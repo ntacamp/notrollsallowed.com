@@ -103,7 +103,8 @@
 <div class="row">
 	<div class="footer">
         <div class="box">
-            {% include app.locale ~ '/content.md' %}
+            {% set content = include(app.locale ~ '/content.md') %}
+            {{content|markdown}}
         </div>
         <br><br>
         <p class="box">{{'follow_us'|trans}} <a href="https://twitter.com/ntacamp">Twitter</a>, <a href="https://www.facebook.com/NoTrollsAllowed">Facebook</a> {{'and'|trans}} <a href="http://blog.notrollsallowed.com"><b>{{'on_blog'|trans}}</b></a>.</p><br>
