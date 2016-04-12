@@ -1,13 +1,22 @@
-No Trolls Allowed yra hakerių, inžinierių, mokslininkų, makerių, menininkų ir
-įvairaus plauko geekų susibūrimas gamtoje, po atviru dangumi. 
-Pagrindinis renginio tikslas - suburti bendraminčius, norinčius papasakoti apie
-savo veiklą, parodyti savo projektus, suorganizuoti kūrybines dirbtuves, kur
-kartu su kitais renginio dalyviais galėtų eksperimentuoti.
+No  Trolls Allowed is a gathering of hackers, engineers, scientists,
+makers, artists and geeks of any other kind taking place under the
+open sky.
 
-Renginio pavadinimas atspindi renginio dvasią, "No Trolls Allowed" - nelaukiame
-jokių trolių, laukiame žmonių turinčių kuo pasidalinti, tad kiekvienas dalyvis
-privalo pasiruošti pranešimą ir jį pristatyti renginio metu.
+Primary objective of the gathering is to provide a scene and attentive
+listeners to those who want to share their passion for what they do
+either as part of their job, open source initiative, or what becomes
+their lifestyle. Some go further by throwing hacking parties or ad-hoc
+workshops inviting everyone to participate, experiment and learn
+something new.
 
-Pranešimo temos gali būti labai plačios - nuo psichologijos, stalo žaidimų iki
-funkcinio programavimo, algoritmų, litavimo dirbtuvių
-([NTA 2015 temos](http://2015.notrollsallowed.com/pranesimai)).
+The foundation of the event is reflected in it's name - at "No Trolls
+Allowed" no trolls are welcome. Only people having something to share
+are welcome thus every single participant should prepare a
+presentation of sorts; and these range wildly from rather short
+multimedia presentations, to performances and games spanning multiple
+days.
+
+There are no restrictions on the range of topics and we usually expect
+at least some from psychology, board games, functional programming,
+visual or performance arts, soldering workshops and artisanal
+brewing. Then there is anything in between, or outside of that.
