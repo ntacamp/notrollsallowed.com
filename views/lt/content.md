@@ -8,6 +8,5 @@ Renginio pavadinimas atspindi renginio dvasią, "No Trolls Allowed" - nelaukiame
 jokių trolių, laukiame žmonių turinčių kuo pasidalinti, tad kiekvienas dalyvis
 privalo pasiruošti pranešimą ir jį pristatyti renginio metu.
 
-Pranešimo temos gali būti labai plačios - nuo psichologijos, stalo žaidimų iki
-funkcinio programavimo, algoritmų, litavimo dirbtuvių
-([NTA 2015 temos](http://2015.notrollsallowed.com/pranesimai)).
+Pranešimo temos gali būti labai plačios - nuo plaukimo pamokų, stalo žaidimų iki
+funkcinio programavimo, algoritmų, procesorių architektūrų.
