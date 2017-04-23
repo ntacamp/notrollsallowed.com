@@ -38,7 +38,7 @@ $app->get('/', function() use ($app) {
 
 $app->get('/{_locale}/', function() use ($app) {
     if (!in_array(strtolower($app['locale']), $app['locales'])) {
-        $app->abort(404, "¯\_(ツ)_/¯ wthudoinman?!");
+        $app->abort(404, "(╯°□°）╯︵ ┻━┻ wthudoinman?!");
     }
     return $app['twig']->render('index.html.twig');
 });
